@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
 import { View } from 'react-native';
 import LabelInput from './components/LabelInput';
+import PasswordInput from './components/PasswordInput';
 
 const App = () => {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [retypePassword, setRetypePassword] = useState('');
   const [petName, setPetName] = useState('');
   const [petDob, setPetDob] = useState('');
   const [breed, setBreed] = useState('');
@@ -19,11 +21,17 @@ return (
       value={email}
       handleChange={setEmail} 
     />
-    <LabelInput
+    <PasswordInput
      label='Password'
      placeholder='Enter password'
      value={password}
      handleChange={setPassword}
+    />
+    <PasswordInput
+     label='Retype Password'
+     placeholder='Enter password'
+     value={retypePassword}
+     handleChange={setRetypePassword}
     /> 
     <LabelInput
       label={`Pet's Name`}
