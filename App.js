@@ -14,7 +14,7 @@ const App = () => {
   const [favoriteToy, setFavoriteToy] = useState('');
   
 return (
-  <View style={{ flex: 1, justifyContent: 'center', backgroundColor: '#ecf0f1' }}>
+  <View style={{ flex: 1, justifyContent: 'center', backgroundColor: '#ecf0f1', padding: 16 }}>
     <LabelInput 
       label='Email' 
       placeholder='Enter email'
